@@ -5,4 +5,6 @@ app.get("/", (req, res) => {
   res.send("Hello World I am new");
 });
 
-app.listen(80);
+app.listen(80, () => {
+  console.log("Server is running on port 80");
+});
